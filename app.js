@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended :true}));
 app.use(Express.static("public"));
 
-mongoose.connect("mongodb+srv://dbuser:dbuser@cluster0.svgqw.mongodb.net/todoList", {useNewUrlParser:true, useUnifiedTopology:true, useCreateIndex: true, useFindAndModify:false });
+mongoose.connect("mongodb+srv://<USERID>:<PASSWORD>@cluster0.svgqw.mongodb.net/todoList", {useNewUrlParser:true, useUnifiedTopology:true, useCreateIndex: true, useFindAndModify:false });
 
 
 const itemsSchema = {
